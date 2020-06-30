@@ -1,22 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Brett Saxon site.</p>
-    <p>Now go build something great.</p>
+
+    <p></p>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    {/* <Link to="/page-2/">Go to page 2</Link> <br />
+    <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
+    <Img
+      fluid={data.singleCoverImg.childImageSharp.fluid}
+      alt="The cover art of Brett's Unreleased Album"
+    />
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    singleCoverImg: file(absolutePath: { regex: "/single-cover.jpg/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
