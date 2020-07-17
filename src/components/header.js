@@ -11,12 +11,15 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1 rem 1.0875rem`,
+        // display: 'flex',
+        // flexDirection: "row",
+        // margin: `0 auto`,
+        // maxWidth: 960,
+        // padding: `1 rem 1.0875rem`,
+        // justifyContent: "space-between",
       }}
     >
-      <h1 style={{ margin: 0, justifyContent: "space-evenly" }}>
+      <h1>
         <Link
           to="/"
           style={{
@@ -24,16 +27,26 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          {siteTitle}{" "}
         </Link>
+
         <Link
-          to="aboutPage"
+          to="/about/"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
           about{" "}
+        </Link>
+        <Link
+          to="/audio/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          audio{" "}
         </Link>
       </h1>
     </div>
