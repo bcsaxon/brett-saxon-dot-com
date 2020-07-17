@@ -9,7 +9,8 @@ const about = () => (
     <h1>about Brett</h1>
     <p>
       Brett Saxon is a musician from Elk River, MN currently residing in
-      Brooklyn, NY.
+      Brooklyn, NY. He's released two full length albums: A Castle Built Too
+      Quickly and Review of the End.
     </p>
   </Layout>
 )
