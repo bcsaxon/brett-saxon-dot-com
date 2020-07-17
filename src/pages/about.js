@@ -6,8 +6,11 @@ const about = () => (
   <Layout>
     <SEO title="About" />
 
-    <h1>Hi from About Page</h1>
-    <p>This is the about page</p>
+    <h1>about Brett</h1>
+    <p>
+      Brett Saxon is a musician from Elk River, MN currently residing in
+      Brooklyn, NY.
+    </p>
   </Layout>
 )
 
