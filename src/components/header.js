@@ -10,14 +10,16 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div
-      style={{
-        // display: 'flex',
-        // flexDirection: "row",
-        // margin: `0 auto`,
-        // maxWidth: 960,
-        // padding: `1 rem 1.0875rem`,
-        // justifyContent: "space-between",
-      }}
+      style={
+        {
+          // display: 'flex',
+          // flexDirection: "row",
+          // margin: `0 auto`,
+          // maxWidth: 960,
+          // padding: `1 rem 1.0875rem`,
+          // justifyContent: "space-between",
+        }
+      }
     >
       <h1>
         <Link
