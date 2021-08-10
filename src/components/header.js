@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   justify-content: space-evenly;
   top: 0;
   background: black;
-  padding: 6vh;
+  padding: 4vh;
   margin-bottom: 1;
 `
 
@@ -25,6 +25,13 @@ const Header = ({ siteTitle }) => (
     <StyledLink to="/">{siteTitle} </StyledLink>
     <StyledLink to="/audio/">audio </StyledLink>
     <StyledLink to="/about/">about </StyledLink>
+    <StyledLink
+      href="https://instagram.com/brettsaxon"
+      target="_blank"
+      rel="noreferrer"
+    >
+      contact{" "}
+    </StyledLink>
   </StyledHeader>
 )
 
