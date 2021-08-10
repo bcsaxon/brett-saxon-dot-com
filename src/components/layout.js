@@ -7,9 +7,11 @@ import "./layout.css"
 import styled from "styled-components"
 
 const LayoutContainer = styled.div`
-  text-align: center;
-  margin: 2vh 4vw;
+  display: flexbox;
+  justify-content: center;
+  margin: 5vh 4vw;
   max-width: 960;
+  text-align: center;
 `
 
 const Layout = ({ children }) => {
