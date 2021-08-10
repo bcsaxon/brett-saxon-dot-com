@@ -6,11 +6,15 @@ import SEO from "../components/seo"
 const audio = () => (
   <Layout>
     <SEO title="Audio" />
-    <h1>Hi from the Audio Page</h1>
+    <h1>audio</h1>
     <p>
-      <a href="https://brettsaxon.bandcamp.com/" target="_blank">
+      <Link
+        href="https://brettsaxon.bandcamp.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Bandcamp
-      </a>
+      </Link>
     </p>
   </Layout>
 )

@@ -16,18 +16,18 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <p></p>
     <Img
-      style={{ margin: "auto" }}
+      style={{ marginBottom: 10 }}
       fluid={data.singleCoverImg.childImageSharp.fluid}
       alt="The cover art of Brett's Unreleased Album"
     />
     <Link
       to="https://open.spotify.com/artist/2JPgsDBBd21E27yDeWUfXA?si=b22A_7ZBTZGqZK2OoXkBpA"
       target="_blank"
-      style={{
-        margin: "center",
-        color: `white`,
-        textDecoration: `none`,
-      }}
+      // style={{
+      //   margin: "center",
+      //   color: `white`,
+      //   textDecoration: `none`,
+      // }}
     >
       <SpotifyIcon />
     </Link>
@@ -38,7 +38,7 @@ export const query = graphql`
   query {
     singleCoverImg: file(absolutePath: { regex: "/single-cover.jpg/" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }

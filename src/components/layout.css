@@ -1,6 +1,5 @@
 html {
   font-family: sans-serif;
-  /* background-color: black; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -15,7 +14,6 @@ details,
 figcaption,
 figure,
 footer,
-header,
 main,
 menu,
 nav,
